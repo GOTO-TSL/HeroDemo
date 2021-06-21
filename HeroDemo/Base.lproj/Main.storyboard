@@ -262,6 +262,13 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJ1-zy-2VH">
+                                <rect key="frame" x="282" y="283" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Y5w-zp-8kh" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="amW-nw-HFY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fwr-GW-Abp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -270,9 +277,13 @@
                             <constraint firstItem="vpf-zH-Tqv" firstAttribute="centerY" secondItem="DPr-vL-zuU" secondAttribute="centerY" constant="-150" id="EdM-dy-2Ca"/>
                             <constraint firstItem="Fwr-GW-Abp" firstAttribute="trailing" secondItem="SRY-Fe-UoJ" secondAttribute="trailing" constant="41" id="HdL-ce-ha6"/>
                             <constraint firstItem="vpf-zH-Tqv" firstAttribute="centerX" secondItem="DPr-vL-zuU" secondAttribute="centerX" constant="-100" id="QKw-Zb-MjL"/>
+                            <constraint firstItem="Fwr-GW-Abp" firstAttribute="trailing" secondItem="EJ1-zy-2VH" secondAttribute="trailing" constant="86" id="RMv-SG-Kvh"/>
                             <constraint firstItem="SRY-Fe-UoJ" firstAttribute="top" secondItem="Fwr-GW-Abp" secondAttribute="top" constant="18" id="RTh-rU-KAA"/>
+                            <constraint firstItem="Fwr-GW-Abp" firstAttribute="bottom" secondItem="EJ1-zy-2VH" secondAttribute="bottom" constant="549" id="URT-55-VQ8"/>
                             <constraint firstItem="EIH-tx-aRf" firstAttribute="leading" secondItem="Fwr-GW-Abp" secondAttribute="leading" constant="20" id="Yjk-Kj-teV"/>
+                            <constraint firstItem="EJ1-zy-2VH" firstAttribute="top" secondItem="Fwr-GW-Abp" secondAttribute="top" constant="239" id="dgf-eT-Kqo"/>
                             <constraint firstItem="SRY-Fe-UoJ" firstAttribute="leading" secondItem="Fwr-GW-Abp" secondAttribute="leading" constant="327" id="eJf-J7-Htv"/>
+                            <constraint firstItem="EJ1-zy-2VH" firstAttribute="leading" secondItem="vpf-zH-Tqv" secondAttribute="trailing" constant="100" id="shu-WV-jsi"/>
                             <constraint firstItem="EIH-tx-aRf" firstAttribute="top" secondItem="Fwr-GW-Abp" secondAttribute="top" constant="18" id="xGS-2P-WPC"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -288,8 +299,67 @@
             </objects>
             <point key="canvasLocation" x="3233" y="96"/>
         </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="lcp-2H-T6X">
+            <objects>
+                <viewController id="Y5w-zp-8kh" customClass="FifthViewController" customModule="HeroDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z2h-YI-18y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XUJ-CB-L3y"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="fWY-8T-cPp" kind="presentation" identifier="toSixView" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="hhg-ls-P0C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vyp-hx-389" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4077" y="96"/>
+        </scene>
+        <!--Sixth View Controller-->
+        <scene sceneID="pMK-jA-HUV">
+            <objects>
+                <viewController id="fWY-8T-cPp" customClass="SixthViewController" customModule="HeroDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ige-Vd-7BC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slime1" translatesAutoresizingMaskIntoConstraints="NO" id="ab8-KI-mOk">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="SI5-1R-s4o"/>
+                                    <constraint firstAttribute="height" constant="150" id="doJ-AJ-B3O"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zyy-Ah-3zE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ab8-KI-mOk" firstAttribute="centerY" secondItem="Ige-Vd-7BC" secondAttribute="centerY" id="1Td-cd-TTa"/>
+                            <constraint firstItem="ab8-KI-mOk" firstAttribute="centerX" secondItem="Ige-Vd-7BC" secondAttribute="centerX" id="3XW-HB-XDn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ab8-KI-mOk" id="3Dn-SN-iwc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFH-9R-hfo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4945" y="96"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="slime1" width="96" height="96"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -298,6 +368,9 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

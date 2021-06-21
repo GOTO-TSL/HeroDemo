@@ -17,6 +17,8 @@
 		02BCF009267849630087013F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCF008267849630087013F /* SecondViewController.swift */; };
 		02BCF00B267849840087013F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCF00A267849840087013F /* ThirdViewController.swift */; };
 		02BCF00D2678499E0087013F /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCF00C2678499E0087013F /* FourthViewController.swift */; };
+		02D904B42679E2C900EC918C /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D904B32679E2C900EC918C /* FifthViewController.swift */; };
+		02D904B62679E2E000EC918C /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D904B52679E2E000EC918C /* SixthViewController.swift */; };
 		21DDD25D3E6CFCA1906F2030 /* Pods_HeroDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C0504D036A3EA218E9EE09 /* Pods_HeroDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		02BCF008267849630087013F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		02BCF00A267849840087013F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		02BCF00C2678499E0087013F /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		02D904B32679E2C900EC918C /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		02D904B52679E2E000EC918C /* SixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
 		5DE2D580FD5CDF1F9CA84C2D /* Pods-HeroDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroDemo.debug.xcconfig"; path = "Target Support Files/Pods-HeroDemo/Pods-HeroDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A0C0504D036A3EA218E9EE09 /* Pods_HeroDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C0E179D85FEF557B688C9D /* Pods-HeroDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroDemo.release.xcconfig"; path = "Target Support Files/Pods-HeroDemo/Pods-HeroDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				02BCF008267849630087013F /* SecondViewController.swift */,
 				02BCF00A267849840087013F /* ThirdViewController.swift */,
 				02BCF00C2678499E0087013F /* FourthViewController.swift */,
+				02D904B32679E2C900EC918C /* FifthViewController.swift */,
+				02D904B52679E2E000EC918C /* SixthViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -226,9 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0266E5C12677B8B60002E520 /* HeroDemo.xcdatamodeld in Sources */,
+				02D904B62679E2E000EC918C /* SixthViewController.swift in Sources */,
 				0266E5BB2677B8B60002E520 /* FirstViewController.swift in Sources */,
 				0266E5B72677B8B60002E520 /* AppDelegate.swift in Sources */,
 				02BCF00D2678499E0087013F /* FourthViewController.swift in Sources */,
+				02D904B42679E2C900EC918C /* FifthViewController.swift in Sources */,
 				02BCF009267849630087013F /* SecondViewController.swift in Sources */,
 				02BCF00B267849840087013F /* ThirdViewController.swift in Sources */,
 				0266E5B92677B8B60002E520 /* SceneDelegate.swift in Sources */,
