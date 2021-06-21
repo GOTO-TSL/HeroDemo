@@ -341,16 +341,42 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slimeface1" translatesAutoresizingMaskIntoConstraints="NO" id="5MG-ba-Sqd">
+                                <rect key="frame" x="132" y="173" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="ZGz-I9-FUe"/>
+                                    <constraint firstAttribute="height" constant="150" id="bfh-Kq-X5d"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devil1" translatesAutoresizingMaskIntoConstraints="NO" id="psq-9E-HHV">
+                                <rect key="frame" x="132" y="573" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Lvs-ml-5aU"/>
+                                    <constraint firstAttribute="width" constant="150" id="dY8-uQ-GvB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zyy-Ah-3zE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ab8-KI-mOk" firstAttribute="centerY" secondItem="Ige-Vd-7BC" secondAttribute="centerY" id="1Td-cd-TTa"/>
                             <constraint firstItem="ab8-KI-mOk" firstAttribute="centerX" secondItem="Ige-Vd-7BC" secondAttribute="centerX" id="3XW-HB-XDn"/>
+                            <constraint firstItem="psq-9E-HHV" firstAttribute="centerX" secondItem="Ige-Vd-7BC" secondAttribute="centerX" id="5ui-a4-V3q"/>
+                            <constraint firstItem="5MG-ba-Sqd" firstAttribute="centerX" secondItem="Ige-Vd-7BC" secondAttribute="centerX" id="72a-Xe-TTs"/>
+                            <constraint firstItem="5MG-ba-Sqd" firstAttribute="centerY" secondItem="Ige-Vd-7BC" secondAttribute="centerY" constant="-200" id="nSD-Vk-3bH"/>
+                            <constraint firstItem="psq-9E-HHV" firstAttribute="centerY" secondItem="Ige-Vd-7BC" secondAttribute="centerY" constant="200" id="ylf-OU-8fo"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="ab8-KI-mOk" id="3Dn-SN-iwc"/>
+                        <outlet property="imageViewDevil" destination="psq-9E-HHV" id="RZC-Yh-e43"/>
+                        <outlet property="imageViewFace" destination="5MG-ba-Sqd" id="hBq-A7-grQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFH-9R-hfo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -359,7 +385,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="devil1" width="191.5" height="191.5"/>
         <image name="slime1" width="96" height="96"/>
+        <image name="slimeface1" width="96" height="96"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

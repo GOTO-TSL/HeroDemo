@@ -10,14 +10,14 @@ import UIKit
 class SixthViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageViewFace: UIImageView!
+    @IBOutlet weak var imageViewDevil: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.animationImages = animatedImages(for: "slime")
-        imageView.animationDuration = 1.0
-        imageView.animationRepeatCount = 0
-//        imageView.image = imageView.animationImages?.first
-        imageView.startAnimating()
+        imageAnimation(for: imageView, with: "slime")
+        imageAnimation(for: imageViewFace, with: "slimeface")
+        imageAnimation(for: imageViewDevil, with: "devil")
     }
     
     func animatedImages(for name: String) -> [UIImage] {
@@ -29,6 +29,14 @@ class SixthViewController: UIViewController {
             i += 1
         }
         return images
+    }
+    
+    func imageAnimation(for imageView: UIImageView, with name: String){
+        imageView.animationImages = animatedImages(for: "\(name)")
+        imageView.animationDuration = 0.7
+        imageView.animationRepeatCount = 0
+        imageView.image = imageView.animationImages?.first
+        imageView.startAnimating()
     }
     
 
